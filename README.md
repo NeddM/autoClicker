@@ -1,0 +1,2 @@
+# autoClicker
+Auto clicker script
