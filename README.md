@@ -3,6 +3,8 @@ Estaba jugando al famoso videojuego **Cookie Clicker**, y pensé en hacer un scr
 
 Mereció la pena porque así no voy a romper mi ratón :)
 
+[Script](autoClicker.py)
+
 ---
 
 I was playing the famous videogame **Cookie Clicker**, and thought about making an script to automate the mouse clicks.
