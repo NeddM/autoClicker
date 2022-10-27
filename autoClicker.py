@@ -10,22 +10,25 @@ Pulsa "i" para reanudar el bot.
 Pulsa "p" para salir del bot.
 """)
 
+
 def farmea():
     while True:
         pyautogui.tripleClick()
         if keyboard.is_pressed('o'):
             noFarmea()
-            continue
+            break
         elif keyboard.is_pressed("p"):
             break
+
 
 def noFarmea():
     while True:
         if keyboard.is_pressed('i'):
             farmea()
-            continue
+            break
         elif keyboard.is_pressed('p'):
             break
+
 
 if __name__ == "__main__":
     noFarmea()
