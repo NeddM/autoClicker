@@ -1,32 +1,64 @@
 # Nedd Chairi Muñoz
 # https://github.com/NeddM
 
+from os import system, name
 import pyautogui
 import keyboard
 
-print("""
+textoComandos = """
 Pulsa "o" para parar el bot.
 Pulsa "i" para reanudar el bot.
 Pulsa "p" para salir del bot.
-""")
+"""
+
+textoActivado = """
+- - - - - - - - - - - - - -
+"¡AUTOCLICKER ACTIVADO!"
+- - - - - - - - - - - - - -
+"""
+
+textoDesctivado = """
+- - - - - - - - - - - - - -
+"¡AUTOCLICKER DESACTIVADO!"
+- - - - - - - - - - - - - -
+"""
+
+textoSalir = "Ha salido de Autoclicker."
+
+
+def limpiarConsola():
+    if name == "nt":
+        _ = system("cls")
+    else:
+        _ = system("clear")
 
 
 def farmea():
+    limpiarConsola()
+    print(textoActivado)
+    print(textoComandos)
     while True:
         pyautogui.tripleClick()
         if keyboard.is_pressed('o'):
             noFarmea()
             break
         elif keyboard.is_pressed("p"):
+            limpiarConsola()
+            print(textoSalir)
             break
 
 
 def noFarmea():
+    limpiarConsola()
+    print(textoDesctivado)
+    print(textoComandos)
     while True:
         if keyboard.is_pressed('i'):
             farmea()
             break
         elif keyboard.is_pressed('p'):
+            limpiarConsola()
+            print(textoSalir)
             break
 
 
