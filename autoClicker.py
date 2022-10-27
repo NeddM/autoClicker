@@ -13,14 +13,14 @@ Pulsa "p" para salir del bot.
 
 textoActivado = """
 - - - - - - - - - - - - - -
-"¡AUTOCLICKER ACTIVADO!"
+- ¡AUTOCLICKER ACTIVADO!  -
 - - - - - - - - - - - - - -
 """
 
 textoDesctivado = """
-- - - - - - - - - - - - - -
-"¡AUTOCLICKER DESACTIVADO!"
-- - - - - - - - - - - - - -
+- - - - - - - - - - - - - - -
+- ¡AUTOCLICKER DESACTIVADO! -
+- - - - - - - - - - - - - - -
 """
 
 textoSalir = "Ha salido de Autoclicker."
